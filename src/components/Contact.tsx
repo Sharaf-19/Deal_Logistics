@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone } from 'lucide-react';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { toast } from 'react-toastify';
 
 const Contact = () => {
   const [result, setResult] = useState('');
 
-  const onSubmit = async event => {
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult('Sending....');
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
 
     formData.append('access_key', import.meta.env.VITE_WEB3FORMS_KEY as string);
 
@@ -23,7 +23,7 @@ const Contact = () => {
     if (data.success) {
       setResult(' Submitted Successfully');
       toast.success('Form submitted successfully!');
-      event.target.reset();
+      event.currentTarget.reset();
     } else {
       console.log('Error', data);
       toast.error(data.message);
