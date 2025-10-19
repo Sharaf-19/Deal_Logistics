@@ -96,26 +96,26 @@ export const servicesData = [
 export const testimonialsData = [
   // Add your testimonial data here
   {
-    name: 'Donald Jackman',
+    name: 'Ahmed Alasbahi',
     title: 'Marketing Manager',
     image: profile_img_1,
-    alt: 'Portrait of Donald Jackman',
+    alt: 'Portrait of ahmed',
     rating: 5,
     text: 'From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.',
   },
   {
-    name: 'Richard Nelson',
-    title: 'UI/UX Designer',
+    name: 'Amr Saleh',
+    title: 'CEO',
     image: profile_img_2,
-    alt: 'Portrait of Richard Nelson',
+    alt: 'Portrait of amr',
     rating: 4,
     text: 'From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.',
   },
   {
-    name: 'James Washington',
+    name: 'Khaled Hassan',
     title: 'Co-Founder',
     image: profile_img_3,
-    alt: 'Portrait of James Washington',
+    alt: 'Portrait of khaled',
     rating: 5,
     text: 'From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.',
   },
