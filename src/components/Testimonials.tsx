@@ -10,16 +10,16 @@ const Testimonials = () => {
       viewport={{ once: true }}
       className='container mx-auto py-10 lg:px-32 w-full overflow-hidden'
       id='Testimonials'>
-      <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>
+      <h1 className='text-2xl sm:text-4xl font-bold mb-3 text-center'>
         Discover what our satisfied clients are{' '}
         <span className='font-bold text-blue-600'>saying about us</span>
       </h1>
 
-      <div className='flex flex-wrap justify-center gap-8 mt-16'>
+      <div className='flex flex-wrap justify-center gap-8 mt-18'>
         {testimonialsData.map((testimonial, index) => (
           <div
             key={index}
-            className='max-w-[340px] border shadow-lg rounded px-8 py-12 text-center'>
+            className='max-w-[340px] border shadow-lg rounded px-8 py-11 text-center'>
             <img
               src={testimonial.image}
               alt={testimonial.alt}
