@@ -12,13 +12,14 @@ const About = () => {
       viewport={{ once: true }}
       className='flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden'
       id='About'>
-      <h1 className='text-2xl sm:text-4xl font-bold mb-4 text-center'>
+      <h1 className='text-6xl sm:text-6xl font-bold mb-4 text-center'>
         About <span className='text-blue-600'>Us</span>
       </h1>
       <p className='text-gray-500 max-w-2xl text-center mb-16 mt-10'>
-        We are committed to providing the best logistics services, ensuring smooth and reliable
-        shipments. Our experienced team is dedicated to making your supply chain efficient and
-        stress-free.
+        Deal Company is dedicated to delivering reliable sourcing, logistics, and education services
+        from China to the Middle East and Africa. With a strong presence on the ground in China, we
+        support businesses and students by simplifying complex processes and ensuring smooth
+        coordination at every stage.
       </p>
 
       <div className='flex flex-col md:flex-row items-center md:items-start md:gap-16'>
@@ -32,8 +33,8 @@ const About = () => {
           <h2 className='text-2xl font-bold text-gray-800'>Muhannad Al-Madhaji</h2>
           <p className='text-blue-600 font-medium mb-3'>CEO & Founder</p>
           <p className='max-w-md text-gray-600 mb-6'>
-            "Leading our company with a vision for innovation, reliability, and customer-first
-            service."
+            "Leading Deal Company with a vision focused on trust, efficiency, and long-term
+            partnerships, while delivering reliable solutions in logistics and education."
           </p>
           <div className='flex flex-col gap-3 text-gray-700'>
             <a
@@ -54,33 +55,34 @@ const About = () => {
           <div className='grid grid-cols-2 gap-6 md:gap-10 w-full 2xl:pr-28 text-center'>
             <div>
               <p className='text-4xl font-bold bg-gradient-to-r from-[#72d6e1] to-[#1964bf] text-transparent bg-clip-text'>
-                <Counter target={10} />
+                <Counter target={3} />
               </p>
               <p>Years of Experience</p>
             </div>
             <div>
               <p className='text-4xl font-bold bg-gradient-to-r from-[#72d6e1] to-[#1964bf] text-transparent bg-clip-text'>
-                <Counter target={500} />
+                <Counter target={20} />
               </p>
               <p>Shipments</p>
             </div>
             <div>
               <p className='text-4xl font-bold bg-gradient-to-r from-[#72d6e1] to-[#1964bf] text-transparent bg-clip-text'>
-                <Counter target={200} />
+                <Counter target={60} />
               </p>
               <p>Happy Clients</p>
             </div>
             <div>
               <p className='text-4xl font-bold bg-gradient-to-r from-[#72d6e1] to-[#1964bf] text-transparent bg-clip-text'>
-                <Counter target={20} />
+                <Counter target={10} />
               </p>
               <p>Partners</p>
             </div>
           </div>
 
           <p className='my-10 max-w-lg'>
-            Our mission is to deliver exceptional value and service to our clients, ensuring their
-            satisfaction and success in every shipment and partnership.
+            Our mission is to connect businesses and students to trusted opportunities in China by
+            providing reliable service, clear communication, and exceptional support in every
+            project and partnership.{' '}
           </p>
 
           {/* <button className='bg-gradient-to-r from-[#72d6e1] to-[#1964bf] text-white px-8 py-2 rounded shadow hover:opacity-90 transition'>

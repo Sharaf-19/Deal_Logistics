@@ -21,6 +21,9 @@ import ship from './ship.png';
 import truck from './truck.png';
 import logo2 from './logo2.png';
 import ceo from './ceo.jpg';
+import book_icon from './book_icon.png';
+import study from './study.png';
+import cargo_check from './cargo_check.png';
 
 export const assets = {
   // Add your asset imports here
@@ -42,33 +45,36 @@ export const assets = {
   ship,
   truck,
   ceo,
+  book_icon,
+  study,
+  cargo_check,
 };
 
 export const servicesData = [
   // Add your project data here
   {
-    title: 'service1',
-    location: 'china',
-    image: flight,
-    icon: air_icon,
-    description:
-      'We provide air freight services that ensure your cargo reaches its destination swiftly and safely, no matter where you are in the world.',
-  },
-  {
-    title: 'service2',
+    title: 'Logistics',
     location: 'china',
     image: ship,
     icon: ship_icon,
     description:
-      'Our sea freight services offer reliable and cost-effective solutions for transporting large volumes of goods across international waters.',
+      'We offer complete sourcing and logistics management services for businesses looking to procure products from China. From supplier communication and product inquiries to shipment coordination and delivery to the Middle East and Africa, we ensure a smooth and reliable supply process.',
   },
   {
-    title: 'service3',
+    title: 'Product Inspection & Cargo Checking',
     location: 'china',
-    image: truck,
+    image: cargo_check,
     icon: truck_icon,
     description:
-      'With our advanced tracking systems, you can monitor your shipments in real-time, ensuring transparency and peace of mind throughout the delivery process.',
+      'We offer on-ground product inspection and cargo verification services across China. If you have goods stored at a supplier or warehouse, our team can visit the location, check the quality and quantity, and provide you with clear updates to ensure your products meet your expectations before shipping.',
+  },
+  {
+    title: 'Education',
+    location: 'china',
+    image: study,
+    icon: book_icon,
+    description:
+      'We provide comprehensive education support services for students who wish to study in China. Our assistance includes language programs, bachelor’s, master’s, and PhD opportunities, along with guidance for scholarship applications and admission procedures to help students start their academic journey with confidence.',
   },
   // {
   //   title: 'service4',

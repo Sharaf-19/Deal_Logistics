@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Header = () => {
   // ✅ List of background images
-  const images = ['/header_img.png', '/header_img2.png'];
+  const images = ['/header_img.png', '/header_img2.jpg', '/header_img3.jpg', '/header_img4.jpg', '/header_img5.png', '/header_img6.jpg'];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -44,11 +44,11 @@ const Header = () => {
         viewport={{ once: true }}
         className='relative container text-center mx-auto py-4 px-6 md:px-30 lg:px-52 text-white'>
         <h2 className='text-5xl sm:text-6xl md:text-[82px] inline-block max-w-3xl font-semibold pt-20'>
-          Explore more with{' '}
+          Explore logistics and education in China with{' '}
           <span className='bg-gradient-to-r from-[#72d6e1] to-[#1964bf] bg-clip-text text-transparent'>
             Deal
-          </span>{' '}
-          for Logistics.
+          </span>
+          .
         </h2>
 
         <div className='mt-16 flex justify-center'>
