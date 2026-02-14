@@ -10,9 +10,10 @@ import project_img_3 from './project_img_3.jpg';
 import project_img_4 from './project_img_4.jpg';
 // import project_img_5 from './project_img_5.jpg';
 // import project_img_6 from './project_img_6.jpg';
-import profile_img_1 from './profile_img_1.png';
-import profile_img_2 from './profile_img_2.png';
-import profile_img_3 from './profile_img_3.png';
+// import profile_img_1 from './profile_img_1.png';
+// import profile_img_2 from './profile_img_2.png';
+// import profile_img_3 from './profile_img_3.png';
+import profile_img_7 from './profile_img_7.jpeg';
 import air_icon from './air_icon.png';
 import ship_icon from './ship_icon.png';
 import truck_icon from './truck_icon.png';
@@ -102,27 +103,27 @@ export const servicesData = [
 export const testimonialsData = [
   // Add your testimonial data here
   {
-    name: 'Ahmed Alasbahi',
-    title: 'Marketing Manager',
-    image: profile_img_1,
+    name: 'HPP Auto Spare Parts',
+    title: 'Trading L.L.C',
+    image: profile_img_7,
     alt: 'Portrait of ahmed',
     rating: 5,
-    text: 'From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.',
+    text: 'From the very first communication, Deal Company understood our sourcing requirements and handled everything professionally. They assisted us with supplier coordination, product inspection, and shipment management from China to the Middle East. Their attention to detail and commitment to reliable service made the entire process smooth and stress-free.',
   },
-  {
-    name: 'Amr Saleh',
-    title: 'CEO',
-    image: profile_img_2,
-    alt: 'Portrait of amr',
-    rating: 4,
-    text: 'From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.',
-  },
-  {
-    name: 'Khaled Hassan',
-    title: 'Co-Founder',
-    image: profile_img_3,
-    alt: 'Portrait of khaled',
-    rating: 5,
-    text: 'From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.',
-  },
+  // {
+  //   name: 'Amr Saleh',
+  //   title: 'CEO',
+  //   image: profile_img_2,
+  //   alt: 'Portrait of amr',
+  //   rating: 4,
+  //   text: 'From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.',
+  // },
+  // {
+  //   name: 'Khaled Hassan',
+  //   title: 'Co-Founder',
+  //   image: profile_img_3,
+  //   alt: 'Portrait of khaled',
+  //   rating: 5,
+  //   text: 'From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.',
+  // },
 ];
