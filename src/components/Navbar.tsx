@@ -34,11 +34,11 @@ const Navbar = () => {
           <a href='#Header' className='cursor-pointer hover:text-gray-400'>
             <li>Home</li>
           </a>
-          <a href='#About' className='cursor-pointer hover:text-gray-400'>
-            <li>About</li>
-          </a>
           <a href='#Services' className='cursor-pointer hover:text-gray-400'>
             <li>Services</li>
+          </a>
+          <a href='#About' className='cursor-pointer hover:text-gray-400'>
+            <li>About</li>
           </a>
           <a href='#Testimonials' className='cursor-pointer hover:text-gray-400'>
             <li>Testimonials</li>
@@ -49,16 +49,16 @@ const Navbar = () => {
         </ul>
         {/* Right side buttons */}
         <div className='flex gap-2 items-center'>
-          <a
+          {/* <a
             href='#Contact'
             className='hidden text-lg md:block text-blue-400 font-semibold hover:underline'>
             Get a Quote
           </a>
 
-          {/* ✅ Mobile Get a Quote next to hamburger */}
+          // ✅ Mobile Get a Quote next to hamburger
           <a href='#Contact' className='md:hidden text-blue-400 font-medium hover:underline'>
             Get a Quote
-          </a>
+          </a> */}
 
           {/* Hamburger Menu */}
           <img
@@ -108,7 +108,7 @@ const Navbar = () => {
             onClick={() => setShowMobileMenu(false)}
             href='#Contact'
             className='hover:text-gray-400 transition'>
-            <li>Contact</li>
+            <li>Contact Us</li>
           </a>
         </ul>
       </div>
