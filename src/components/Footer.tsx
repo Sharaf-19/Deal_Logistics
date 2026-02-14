@@ -31,14 +31,14 @@ function Footer() {
           <h3 className='text-lg text-white font-bold mb-4'>Follow Us</h3>
           <div className='flex gap-4'>
             <a
-              href='https://facebook.com'
+              href='https://www.facebook.com/share/18BkVJFd1u/?mibextid=wwXIfr'
               target='_blank'
               rel='noopener noreferrer'
               className='text-gray-400 hover:text-white transition'>
               <Facebook className='w-5 h-5' />
             </a>
             <a
-              href='https://instagram.com'
+              href='https://www.instagram.com/deal__company?igsh=c2g2aXhkMTlxcnh3&utm_source=qr'
               target='_blank'
               rel='noopener noreferrer'
               className='text-gray-400 hover:text-white transition'>
