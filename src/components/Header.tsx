@@ -46,18 +46,28 @@ const Header = () => {
         <h2 className='text-5xl sm:text-6xl md:text-[82px] inline-block max-w-3xl font-semibold pt-20'>
           Explore logistics and education in China with{' '}
           <span className='bg-gradient-to-r from-[#72d6e1] to-[#1964bf] bg-clip-text text-transparent'>
-            Deal
+            DEAL
           </span>
           .
         </h2>
 
-        <div className='mt-16 flex justify-center'>
+        <div className='mt-16 flex flex-col sm:flex-row justify-center gap-6'>
+          {/* Track Order Button */}
           <a
             href='http://119.8.54.170/express/'
             target='_blank'
             rel='noopener noreferrer'
             className='bg-gradient-to-r from-[#72d6e1] to-[#1964bf] text-white px-8 sm:px-10 py-3 rounded-full text-lg sm:text-xl font-medium shadow-lg hover:opacity-90 transition'>
             Track Your Order
+          </a>
+
+          {/* Explore Education Button */}
+          <a
+            href='/education'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='border border-white px-8 sm:px-10 py-3 rounded-full text-lg sm:text-xl font-medium hover:bg-white hover:text-black transition'>
+            Explore Education
           </a>
         </div>
       </motion.div>
