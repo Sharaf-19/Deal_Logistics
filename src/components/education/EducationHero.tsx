@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { assets } from '../../assets/assets';
 
-const heroImages = ['/education/hero2.jpg', '/education/hero2.jpg', '/education/hero3.jpg', '/education/hero4.jpg', '/education/hero5.jpg', '/education/hero6.jpg'];
+const heroImages = ['/education/hero2.jpg', '/education/hero1.jpg', '/education/hero3.jpg', '/education/hero4.jpg', '/education/hero5.jpg', '/education/hero6.jpg'];
 
 const EducationHero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -112,7 +112,7 @@ const EducationHero = () => {
         <div className='mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center'>
           {/* Primary Button */}
           <a
-            href='#Programs'
+            href='#Announcements'
             className='group relative inline-flex items-center justify-center px-10 py-4 text-lg font-semibold text-white rounded-full 
     bg-gradient-to-r from-[#72d6e1] to-[#1d2b3d] 
     shadow-xl hover:shadow-2xl 

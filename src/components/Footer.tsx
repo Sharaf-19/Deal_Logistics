@@ -8,7 +8,7 @@ function Footer() {
       <div className='container mx-auto flex flex-col md:flex-row sm:flex-row justify-between items-start'>
         <div className='w-full md:w-1/3 mb-8 md:mb-0'>
           <img src={assets.logo2} className='h-24 w-auto' alt='logo' />
-          <p className='text-gray-400 mt-4'>about deal service logistics company</p>
+          <p className='text-gray-400 mt-4'>For Logistics and Education Services.</p>
         </div>
         <div className='w-full md:w-1/5 mb-8 md:mb-0'>
           <h3 className='text-lg text-white font-bold mb-4'>Company</h3>
@@ -55,7 +55,7 @@ function Footer() {
         </div>
       </div>
       <div className='border-t border-gray-700 py-4 mt-10 text-center text-gray-500'>
-        © 2024 Company Name. All rights reserved.
+        © 2026 Deal Company. All rights reserved.
       </div>
     </div>
   );

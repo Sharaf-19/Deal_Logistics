@@ -42,7 +42,7 @@ export const announcements: Announcement[] = [
   },
   {
     id: '2',
-    title: "Bachelor's Degree — 2026",
+    title: "Bachelor's Scholarship Program",
     category: 'Bachelor',
     image: '/announcements/prog2.jpeg',
     deadline_date: '2026-07-15',
@@ -62,6 +62,22 @@ export const announcements: Announcement[] = [
     category: 'Scholarship',
     image: '/announcements/prog4.jpeg',
     deadline_date: '2026-07-01',
+    active: true,
+  },
+  {
+    id: '5',
+    title: 'Master’s Scholarship Program',
+    category: 'Master',
+    image: '/announcements/prog5.jpeg',
+    deadline_date: '2026-06-01',
+    active: true,
+  },
+  {
+    id: '6',
+    title: 'Bachelor’s Scholarship Program',
+    category: 'Scholarship',
+    image: '/announcements/prog6.jpeg',
+    deadline_date: '2026-05-31',
     active: true,
   },
 ];
