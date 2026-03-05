@@ -3,8 +3,18 @@ import { assets } from '../assets/assets';
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
   const buttonRef = useRef<HTMLImageElement | null>(null);
+
+  // ✅ Scroll detection for navbar background
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // ✅ Close when clicking outside
   useEffect(() => {
@@ -24,29 +34,30 @@ const Navbar = () => {
   }, [showMobileMenu]);
 
   return (
-    <div className='absolute top-0 left-0 w-full z-10'>
-      <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
+    <div className='fixed top-0 left-0 w-full z-50'>
+      <div
+        className={`container mx-auto flex justify-between items-center py-1 px-6 md:px-20 lg:px-32 transition-all duration-300 ${isScrolled ? 'bg-white/90' : 'bg-transparent'}`}>
         <a href='#Header' className='flex items-center gap-2'>
           <img src={assets.logo2} alt='Deal Service Logistics' className='h-24 w-auto' />
         </a>
         {/* Desktop Menu */}
-        <ul className='hidden md:flex gap-7 text-white flex-row'>
-          <a href='#Header' className='cursor-pointer hover:text-gray-400'>
+        <ul className={`hidden md:flex gap-7 flex-row ${isScrolled ? 'text-black' : 'text-white'}`}>
+          <a href='#Header' className='cursor-pointer hover:text-gray-600'>
             <li>Home</li>
           </a>
-          <a href='#Services' className='cursor-pointer hover:text-gray-400'>
+          <a href='#Services' className='cursor-pointer hover:text-gray-600'>
             <li>Services</li>
           </a>
           <a href='/education' className='cursor-pointer hover:text-[#72d6e1] font-medium'>
             <li>Education</li>
           </a>
-          <a href='#About' className='cursor-pointer hover:text-gray-400'>
+          <a href='#About' className='cursor-pointer hover:text-gray-600'>
             <li>About</li>
           </a>
-          <a href='#Testimonials' className='cursor-pointer hover:text-gray-400'>
+          <a href='#Testimonials' className='cursor-pointer hover:text-gray-600'>
             <li>Testimonials</li>
           </a>
-          <a href='#Contact' className='cursor-pointer hover:text-gray-400'>
+          <a href='#Contact' className='cursor-pointer hover:text-gray-600'>
             <li>Contact</li>
           </a>
         </ul>
@@ -81,8 +92,8 @@ const Navbar = () => {
           maxHeight: showMobileMenu ? menuRef.current?.scrollHeight : 0,
           opacity: showMobileMenu ? 1 : 0,
         }}
-        className='md:hidden bg-gray-900 text-white shadow-lg overflow-hidden transition-all duration-500 ease-in-out'>
-        <ul className='flex flex-col items-start gap-4 p-6 text-lg font-medium'>
+        className={`md:hidden shadow-lg overflow-hidden transition-all duration-500 ease-in-out ${isScrolled ? 'bg-white text-black' : 'bg-gray-900 text-white'}`}>
+        <ul className='flex flex-col items-start gap-4 py-2 px-6 text-lg font-medium'>
           <a
             onClick={() => setShowMobileMenu(false)}
             href='#Header'
